@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="author" content="PasQal Ngaoka" />
+    <meta name="publisher" content="Qal Technologies" />
+
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+
+    <title>Quote Me - Sign Up</title>
+  </head>
+  <body class="fadeIn">
+    <div class="logo">
+      <div id="logoContainer">
+        <p class="logoname">Quote <span>Me</span></p>
+      </div>
+    </div>
+
+    <form id="quote-me-form" method="post">
+      <!-- label for display name -->
+      <section id="display-section" class="active fadeIn">
+        <label for="display-name"> Display name:</label>
+        <input type="text" name="display-name" id="display-name" />
+
+        <span class="display-info"
+          >This name is just for display and isn't your username.
+        </span>
+
+        <div class="btncnt">
+          <button type="button" id="display-next" class="next">></button>
+        </div>
+      </section>
+
+      <!-- label for user name  -->
+      <section id="username-section">
+        <label for="user-name">Username: </label>
+        <input type="text" name="user-name" id="user-name" />
+
+        <span class="display-info"
+          >This is used to contact, refer and search you...
+        </span>
+
+        <div class="btncnt">
+          <button type="button" id="user-previous" class="previous"><</button>
+          <button type="button" id="user-next" class="next">></button>
+        </div>
+      </section>
+
+      <!-- label for password  -->
+      <section id="password-section">
+        <label for="password">Password: </label>
+        <div class="passCnt">
+          <input type="password" name="password" id="password" />
+          <div id="see">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-eye-slash-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"
+              />
+              <path
+                d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"
+              />
+            </svg>
+          </div>
+        </div>
+        <span class="display-info">Keep your password safe! </span>
+
+        <div class="btncnt">
+          <button type="button" id="password-previous" class="previous">
+            <
+          </button>
+          <button type="submit" id="password-next">DONE</button>
+        </div>
+      </section>
+    </form>
+
+    <footer class="loginfooter">
+      <a href="../html/login.html">Login?</a>
+    </footer>
+  </body>
+
+  <script src="../js/regAnimation.js"></script>
+  <script src="../js/logoLoader.js"></script>
+  <script src="../js/verify.js"></script>
+</html>

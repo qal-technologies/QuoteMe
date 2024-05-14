@@ -1,0 +1,196 @@
+/* A dropdown animation that falls slowly from the top of the window.  */
+.dropdown {
+  animation-duration: 1s;
+  animation-name: intro;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+@keyframes intro {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* An animation that makes the element to move upward */
+.moveUp {
+  animation-duration: 1s;
+  animation-name: moveUp;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* A fade in animation that just reduces opacity with time. */
+.fadeIn {
+  animation-duration: 1s;
+  animation-name: fadein;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* The object fades out  */
+.fadeOut {
+  animation-duration: 1s;
+  animation-name: fadeout;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+/* For a spread animation that also adds a fade in transition to it. */
+.spread {
+  animation-duration: 1s;
+  animation-name: spread;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+@keyframes spread {
+  0% {
+    opacity: 0;
+    letter-spacing: -3px;
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+
+/* The object comes from the left slowly */
+.leftIntro{
+  animation-duration: 1s;
+  animation-name: left;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
+
+/* The object goes out from the left  */
+.leftOut{
+  animation-duration: 1s;
+  animation-name: leftOut;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+
+@keyframes leftOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+
+/* The object comes from the right  */
+.rightIntro{
+  animation-duration: 1s;
+  animation-name: right;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
+/* The object goes out from the right  */
+.rightOut{
+  animation-duration: 1s;
+  animation-name: rightOut;
+  animation-timing-function: linear;
+  animation-delay: 10ms;
+  animation-direction: alternate;
+}
+
+
+@keyframes rightOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

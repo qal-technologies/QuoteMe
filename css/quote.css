@@ -1,0 +1,96 @@
+#quote-container {
+  display: grid;
+  border-radius: 10px;
+  width: 300px;
+  min-height: 200px;
+  height: max-content;
+  background-color: rgba(247, 247, 247, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 000;
+  box-shadow: 1px 1px 5px rgb(200, 200, 200);
+  transition: all ease-in-out 500ms;
+  text-align: justify;
+}
+
+.first-row {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ff5566d1;
+  height: 60px;
+  padding: 10px;
+  align-items: center;
+}
+
+.userImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  place-content: center;
+  user-select: none;
+}
+
+.userImg img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  place-content: center;
+}
+
+.userInfo {
+  display: grid;
+  gap: 1px;
+  padding-top: 10px;
+}
+
+.upper-display {
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 1px;
+  gap: 10px;
+  font-size: medium;
+}
+
+.badge {
+  font-weight: bolder;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.username {
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  font-size: small;
+  color: rgb(88, 88, 88);
+  font-style: italic;
+}
+
+#your-quote {
+  display: flex;
+  text-align: justify;
+  font-size: small;
+  padding: 10px;
+}
+
+.ad-div {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  font-size: smaller;
+  margin-bottom: -90px;
+  padding: 10px;
+}
+
+.label {
+  font-weight: bold;
+  color: black;
+  user-select: none;
+}
+
+.webLink {
+  color: #ff5566;
+  font-size: x-small;
+  text-decoration: underline;
+  user-select: text;
+}

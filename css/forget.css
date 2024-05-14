@@ -1,0 +1,11 @@
+body {
+  gap: 5px;
+}
+
+#logoContainer {
+  margin: 10px;
+}
+
+.passCnt {
+  gap: 0;
+}
